@@ -1,0 +1,114 @@
+.section {
+  padding-top: 29px;
+  padding-bottom: 53px;
+
+  //   @include mq(tablet) {
+  //     padding-top: 68px;
+  //     padding-bottom: 56px;
+  //   }
+
+  //   @include mq(desktop) {
+  //     padding-top: 63px;
+  //     padding-bottom: 180px;
+  //   }
+}
+
+.containet {
+  width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  //   @include mq(mobile) {
+  //     width: $mobile;
+  //   }
+
+  //   @include mq(tablet) {
+  //     width: $tablet;
+  //   }
+
+  //   @include mq(desktop) {
+  //     width: $desktop;
+  //   }
+}
+
+// .hero__thumb {
+//   display: flex;
+//   justify-content: space-between;
+// margin-right: 36px;
+
+// }
+.hero__pic {
+  margin-bottom: 16px;
+}
+.hero__title {
+  margin-bottom: 20px;
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+
+  //   font-size: 36px;
+  //   line-height: 1.25;
+  //   margin-bottom: 25px;
+
+  //   font-size: 64px;
+  //   line-height: 1.25;
+  //   margin-bottom: 40px;
+
+  color: #000000;
+}
+.hero__subtitle {
+  margin-bottom: 33px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+
+  color: #8f95a5;
+
+  //   @include mq(tablet) {
+  //     font-size: 16px;
+  //     line-height: 1.5;
+  //     margin-bottom: 32px;
+  //   }
+
+  //   @include mq(tablet) {
+  //     font-size: 24px;
+  //   margin-bottom: 60px;
+  //   }
+}
+.hero__btn {
+  padding: 18px 99px;
+  width: 289px;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: #ffffff;
+  background: #263238;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+
+  //   @include mq(tablet) {
+  //   padding: 19px 67px;
+  //     font-size: 18px;
+  //   }
+
+  //   @include mq(desktop) {
+  //   padding: 23px 64px;
+  //       font-size: 36px;
+  //   line-height: 1.5;
+  //   text-align: center;
+  //   letter-spacing: 0.03em;
+  //   border-radius: 10px;
+  //
+  //   }
+}
