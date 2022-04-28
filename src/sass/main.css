@@ -1,3 +1,8 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -5,16 +10,32 @@
   margin-left: auto;
   margin-right: auto;
 }
-.contacts .container {
-  display: flex;
-  justify-content: space-between;
 
-  @media screen and(max-width:767px) {
+.contacts .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     text-align: center;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -23,6 +44,7 @@
   height: 346px;
   position: fixed;
 }
+
 .contact-name {
   font-size: 24px;
   line-height: 80px;
@@ -31,50 +53,72 @@
   font-size: 30px;
   line-height: 80px;
   /* identical to box height */
-
   color: #000000;
+}
 
-  @media screen and(min-width:768px) {
+@media screen and (min-width: 768px) {
+  .contact-name {
     font-size: 30px;
     line-height: 80px;
   }
+}
 
-  @media screen and(min-width:1200px) {
+@media screen and (min-width: 1200px) {
+  .contact-name {
     font-size: 48px;
     line-height: 72px;
   }
 }
+
 .contact-txt {
   width: 654px;
   margin-bottom: 30px;
   font-weight: 400;
-
   font-size: 14px;
   line-height: 21px;
-
   color: #8f95a5;
+}
 
-  @media screen and(min-width:1200px) {
+@media screen and (min-width: 1200px) {
+  .contact-txt {
     width: 654px;
     font-size: 20px;
     line-height: 30px;
   }
 }
+
 .contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  @media screen and(max-width:767px) {
+}
+
+@media screen and (max-width: 767px) {
+  .contact-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
+
 .contact-form {
   position: relative;
   margin-right: 6px;
-  @media screen and(min-width:1200px) {
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-form {
     margin-right: 30px;
   }
 }
+
 .contact-label {
   position: absolute;
   top: 16px;
@@ -82,35 +126,38 @@
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
-
   /* identical to box height, or 188% */
-
   color: #8f95a5;
+}
 
-  @media screen and(min-width:1200px) {
+@media screen and (min-width: 1200px) {
+  .contact-label {
     top: 20px;
     left: 30px;
     font-size: 16px;
     line-height: 30px;
   }
 }
+
 .contact-input {
   width: 283px;
   height: 50px;
-
   border-radius: 5px;
-
   border: 1px solid #8f95a5;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
-@media screen and(max-width:767px) {
-    
+@media screen and (max-width: 767px) {
+  .contact-input {
     margin-bottom: 17px;
   }
-  @media screen and(min-width:1200px) {
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-input {
     width: 425px;
     height: 70px;
-
     border-radius: 10px;
   }
 }
@@ -118,25 +165,24 @@
 .contact-btn {
   width: 145px;
   height: 50px;
-
   background: #263238;
   border-radius: 10px;
   font-weight: 500;
   font-size: 13px;
   line-height: 20px;
-
   /* identical to box height */
-
   text-align: center;
   letter-spacing: 0.03em;
   border-radius: 5px;
-
   color: #ffffff;
+}
 
-  @media screen and(min-width:1200px) {
+@media screen and (min-width: 1200px) {
+  .contact-btn {
     width: 312px;
     height: 70px;
     font-size: 20px;
     line-height: 30px;
   }
 }
+/*# sourceMappingURL=main.css.map */
