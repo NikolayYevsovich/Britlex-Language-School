@@ -1,0 +1,23 @@
+.container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pricing__title {
+    text-align: center;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 80px;
+}
+
+.pricing__list {
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
