@@ -1,3 +1,8 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
 h1,
 h2,
 h3,
@@ -35,13 +40,16 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  // outline: 1px solid red;
+}
 
-  @include mq(tablet) {
+@media screen and (min-width: 768px) {
+  .container {
     max-width: 768px;
   }
+}
 
-  @include mq(desktop) {
+@media screen and (min-width: 1200px) {
+  .container {
     max-width: 1200px;
   }
 }
@@ -50,6 +58,7 @@ img {
   padding-top: 50px;
   padding-bottom: 84px;
 }
+
 .about__title {
   font-family: 'Poppins';
   font-style: normal;
@@ -61,7 +70,7 @@ img {
   color: #2a3246;
 }
 
-@include mq(mobile-only) {
+@media screen and (max-width: 767.98px) {
   .about__item:first-child(1) {
     margin-bottom: 24px;
   }
@@ -70,7 +79,7 @@ img {
   }
 }
 
-@include mq(mobile-only) {
+@media screen and (max-width: 767.98px) {
   .about__item:nth-child(1) {
     margin-bottom: 29px;
   }
@@ -81,29 +90,36 @@ img {
     margin-bottom: 23px;
   }
 }
+
 .about__text {
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 1.53;
   text-align: center;
-
   color: #8f95a5;
   margin-bottom: 10px;
 }
 
-.about__icon {
-  @include mq(mobile-only) {
+@media screen and (max-width: 767.98px) {
+  .about__icon {
     width: 283px;
     height: 283px;
     margin-bottom: 23px;
   }
-  @include mq(tablet-only) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .about__icon {
     width: 295px;
     height: 295px;
   }
-  @include mq(desktop) {
+}
+
+@media screen and (min-width: 1200px) {
+  .about__icon {
     width: 504px;
     height: 504px;
   }
 }
+/*# sourceMappingURL=main.css.map */
