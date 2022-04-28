@@ -2,15 +2,15 @@
   padding-top: 29px;
   padding-bottom: 53px;
 
-  //   @include mq(tablet) {
-  //     padding-top: 68px;
-  //     padding-bottom: 56px;
-  //   }
+  @include mq(tablet-only) {
+    padding-top: 68px;
+    padding-bottom: 56px;
+  }
 
-  //   @include mq(desktop) {
-  //     padding-top: 63px;
-  //     padding-bottom: 180px;
-  //   }
+  @include mq(desktop) {
+    padding-top: 63px;
+    padding-bottom: 180px;
+  }
 }
 
 .containet {
@@ -20,27 +20,26 @@
   margin-left: auto;
   margin-right: auto;
 
-  //   @include mq(mobile) {
-  //     width: $mobile;
-  //   }
+  @include mq(tablet) {
+    width: 768px;
+  }
 
-  //   @include mq(tablet) {
-  //     width: $tablet;
-  //   }
-
-  //   @include mq(desktop) {
-  //     width: $desktop;
-  //   }
+  @include mq(desktop) {
+    width: 1200px;
+  }
 }
 
-// .hero__thumb {
-//   display: flex;
-//   justify-content: space-between;
-// margin-right: 36px;
-
-// }
+.hero__thumb {
+  @include mq(tablet) {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 36px;
+  }
+}
 .hero__pic {
-  margin-bottom: 16px;
+  @include mq(mobile-only) {
+    margin-bottom: 16px;
+  }
 }
 .hero__title {
   margin-bottom: 20px;
@@ -50,13 +49,17 @@
   line-height: 1.5;
   text-align: center;
 
-  //   font-size: 36px;
-  //   line-height: 1.25;
-  //   margin-bottom: 25px;
+  @include mq(tablet) {
+    font-size: 36px;
+    line-height: 1.25;
+    margin-bottom: 25px;
+  }
 
-  //   font-size: 64px;
-  //   line-height: 1.25;
-  //   margin-bottom: 40px;
+  @include mq(desktop) {
+    font-size: 64px;
+    line-height: 1.25;
+    margin-bottom: 40px;
+  }
 
   color: #000000;
 }
@@ -71,16 +74,16 @@
 
   color: #8f95a5;
 
-  //   @include mq(tablet) {
-  //     font-size: 16px;
-  //     line-height: 1.5;
-  //     margin-bottom: 32px;
-  //   }
+  @include mq(tablet) {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 32px;
+  }
 
-  //   @include mq(tablet) {
-  //     font-size: 24px;
-  //   margin-bottom: 60px;
-  //   }
+  @include mq(tablet) {
+    font-size: 24px;
+    margin-bottom: 60px;
+  }
 }
 .hero__btn {
   padding: 18px 99px;
@@ -97,18 +100,17 @@
   cursor: pointer;
   border: none;
 
-  //   @include mq(tablet) {
-  //   padding: 19px 67px;
-  //     font-size: 18px;
-  //   }
+  @include mq(tablet) {
+    padding: 19px 67px;
+    font-size: 18px;
+  }
 
-  //   @include mq(desktop) {
-  //   padding: 23px 64px;
-  //       font-size: 36px;
-  //   line-height: 1.5;
-  //   text-align: center;
-  //   letter-spacing: 0.03em;
-  //   border-radius: 10px;
-  //
-  //   }
+  @include mq(desktop) {
+    padding: 23px 64px;
+    font-size: 36px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border-radius: 10px;
+  }
 }
