@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  padding: 55px 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__btn {
+  padding: 18px 110px;
+  border: 2px solid #263238;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+@media screen and (max-width: 1199px) {
+  .header__btn {
+    display: none;
+  }
+}
+
+.header__btn:last-child {
+  margin-right: 0;
+}
+
+.header__btn:hover {
+  color: #939393;
+  border-color: #939393;
+}
+
+.header__btn:focus {
+  color: #939393;
+  border-color: #939393;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #263238;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: 'Poppins';
+}
+
+.nav__link:hover {
+  color: #939393;
+}
+
+.nav__link:focus {
+  color: #939393;
+}
+
+.nav__item {
+  list-style: none;
+  margin-right: 50px;
+}
+
+@media screen and (max-width: 1199px) {
+  .nav {
+    display: none;
+  }
+}
+
+.logo {
+  text-decoration: none;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 0.56;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.logo--span {
+  color: #939393;
+}
+
+.logo--span:hover {
+  color: #f6f696;
+}
+
+.logo--span:focus {
+  color: #f6f696;
+}
+
+@media screen and (min-width: 1200px) {
+  .mobile_header__btn {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */
