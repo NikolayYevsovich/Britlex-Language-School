@@ -3,6 +3,8 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
+
+
 h1,
 h2,
 h3,
@@ -36,15 +38,28 @@ img {
 
 .container {
   max-width: 480px;
+
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 324px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 742px;
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+
   }
 }
 
@@ -53,6 +68,82 @@ img {
     max-width: 1200px;
   }
 }
+
+
+@media screen and (min-width: 768px) {
+  .footer-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.footer-logo {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000;
+  text-decoration: none;
+  margin-right: 463px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-logo {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    font-size: 36px;
+  }
+}
+
+.footer-logo__second-part {
+  color: #939393;
+}
+
+.policy-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.policy-list {
+  list-style: none;
+}
+
+.policy-list__link {
+  font-size: 11px;
+  line-height: 1.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.02em;
+  color: #8F95A5;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .policy-list__link {
+    font-size: 13px;
 
 .about {
   padding-top: 50px;
@@ -113,13 +204,19 @@ img {
   .about__icon {
     width: 295px;
     height: 295px;
+
   }
 }
 
 @media screen and (min-width: 1200px) {
+
+  .policy-list__link {
+    font-size: 24px;
+
   .about__icon {
     width: 504px;
     height: 504px;
+
   }
 }
 /*# sourceMappingURL=main.css.map */
