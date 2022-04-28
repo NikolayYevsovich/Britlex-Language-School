@@ -1,0 +1,79 @@
+ul {
+
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    outline: transparent;
+    color: currentColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
+}
+
+.skills__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 3.33;
+
+    color: #000000;
+    text-align: center;
+}
+
+.skills__item {
+    padding: 20px;
+    background: #F5F5F5;
+    border-radius: 5px;
+
+    &:not(:last-child) {
+        margin-bottom: 21px;
+    }
+}
+
+.after-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 4.44;
+
+    color: #263238;
+}
+
+.text {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.53;
+
+    color: #8F95A5;
+}
+
+.btn {
+    padding: 14px 43px;
+    margin-left: 13px;
+    margin-bottom: 44px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+
+    color: #FFFFFF;
+
+    background: #263238;
+    border-radius: 5px;
+}
